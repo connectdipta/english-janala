@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📘 English Janala - Platform for Learning English</title>
+
+    <!-- TAILWIND & DAISY UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- ICON -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <style>
+        .hind{
+        font-family: "Hind Siliguri";
+        }
+        .poppins{
+            font-family: "Poppins";
+        }
+    </style>
+
+</head>
+<body class="bg-white w-full">
+    <!-- NAV BAR -->
+    <nav class="bg-[#badeff80] h-16 max-sm:h-20">
+        <div class="max-w-[calc(100%-80px)] mx-auto flex justify-between h-full  max-sm:flex-col ">
+            <h2 class="poppins flex text-xl font-semibold items-center max-sm:ml-18">English<img src="./assets/logo.png" alt="" class="w-10 h-10"> <span class="hind text-xl font-semibold">জানালা</span></h2>
+            <!-- NAV BUTTONS -->
+            <div class="flex items-center gap-1 max-sm:ml-6">
+                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-circle-question"></i> FAQ</button>
+                <button class="btn btn-outline btn-primary"><i class="fa-brands fa-leanpub"></i>Learn</button>
+                <button class="btn btn-outline btn-primary"><i class="fa-solid fa-right-from-bracket"></i>Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="max-w-[calc(100%-80px)] mx-auto flex justify-between h-full max-sm:flex-col-reverse">
+        <div class="my-auto">
+            <h2 class="poppins text-5xl font-semibold mb-5"><span class="text-sky-500">English</span> is Easy!!</h2>
+            <p class="hind text-xl font-medium text-[#18181b]">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা<br>আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে<br>যাবে অন্য একটি Level এ</p>
+            <form action="" class="flex flex-col gap-5 w-80 my-3">
+                <!-- Name Input -->
+                <input 
+                   type="text" 
+                   placeholder="Enter Your Name" 
+                   class="px-4 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                 <!-- Password Input -->
+                 <input 
+                   type="password" 
+                   placeholder="Enter Password" 
+                   class="px-4 py-2 border border-blue-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+
+                <!-- Submit Button -->
+                <button 
+                   type="submit" 
+                   class="font-medium w-30
+                   bg-blue-600 text-white py-2 rounded-md hover:bg-blue-700 active:scale-95 transition-all duration-200"
+                >
+                   Get Started
+                </button>
+            </form>
+        </div>
+        <img src="./assets/hero-student.png" alt="" class="w-2/4 max-sm:w-70">
+    </section>
+
+    <!-- Let's Learn/Level Container -->
+    <section class="mx-60 mt-7 mb-9 max-sm:mx-20">
+        <h2 class="poppins text-4xl font-semibold mb-8 text-center"><span class="text-sky-500">Let's</span> Learn Vocabularies</h2>
+        <div class="grid grid-cols-7 max-sm:grid-cols-2 gap-2" id="levels">
+            <!-- Learn-1 -->
+            <button class="btn btn-outline btn-primary active:scale-95 transition-all duration-200"><i class="fa-solid fa-book-open"></i> Lesson-1</button>
+            <!-- Learn-2 -->
+            <button class="btn btn-outline btn-primary active:scale-95 transition-all duration-200"><i class="fa-solid fa-book-open"></i> Lesson-2</button>
+            <!-- Learn-3 -->
+            <button class="btn btn-outline btn-primary active:scale-95 transition-all duration-200"><i class="fa-solid fa-book-open"></i> Lesson-3</button>
+            <!-- Learn-4 -->
+            <button class="btn btn-outline btn-primary active:scale-95 transition-all duration-200"><i class="fa-solid fa-book-open"></i> Lesson-4</button>
+            <!-- Learn-5 -->
+            <button class="btn btn-outline btn-primary active:scale-95 transition-all duration-200"><i class="fa-solid fa-book-open"></i> Lesson-5</button>
+            <!-- Learn-6 -->
+            <button class="btn btn-outline btn-primary active:scale-95 transition-all duration-200"><i class="fa-solid fa-book-open"></i> Lesson-6</button>
+            <!-- Learn-7 -->
+            <button class="btn btn-outline btn-primary active:scale-95 transition-all duration-200"><i class="fa-solid fa-book-open"></i> Lesson-7</button>
+            
+        </div>
+    </section>
+
+    <!-- Lesson Select Home -->
+    <section class="max-w-[calc(100%-80px)] mx-auto flex justify-center items-center h-64 bg-[#badeff80] mb-4 hidden">
+  <div class="text-center">
+    <p class="hind text-base font-normal text-[#292626]">
+      আপনি এখনো কোন <span class="poppins">Lesson Select</span> করেন নি
+    </p>
+    <h2 class="poppins text-3xl font-medium mt-2">
+      <span class="hind">একটি</span> Lesson Select <span class="hind">করুন।</span>
+    </h2>
+  </div>
+    </section>
+
+    <!-- Lesson Details -->
+    <section class="max-w-[calc(100%-80px)] mx-auto py-20 bg-[#badeff80] mb-4 grid grid-cols-3 grid-rows-2 max-sm:grid-cols-1 gap-6 place-items-center">
+       <!-- CARD-1 -->
+       <div class="w-80 h-55 bg-white rounded-xl shadow-lg">
+           <div class="h-30 w-60 text-center mx-auto mt-7 bg-[#a8ebff] rounded-lg shadow-md mb-4">
+              <h3 class="poppins text-2xl font-bold pt-2">Eager</h3>
+              <p class="poppins text-lg font-medium">Meaning /Pronounciation</p>
+              <p class="hind text-2xl font-semibold text-[#62748e]">"আগ্রহী / ইগার</p>
+           </div>
+           <div class="flex justify-between mx-4">
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+             <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+            <i class="fa-solid fa-volume-high"></i>
+            </button>
+           </div>
+       </div>
+       <!-- CARD-2 -->
+       <div class="w-80 h-55 bg-white rounded-xl shadow-lg">
+           <div class="h-30 w-60 text-center mx-auto mt-7 bg-[#a8ebff] rounded-lg shadow-md mb-4">
+              <h3 class="poppins text-2xl font-bold pt-2">Eager</h3>
+              <p class="poppins text-lg font-medium">Meaning /Pronounciation</p>
+              <p class="hind text-2xl font-semibold text-[#62748e]">"আগ্রহী / ইগার</p>
+           </div>
+           <div class="flex justify-between mx-4">
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+             <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+            <i class="fa-solid fa-volume-high"></i>
+            </button>
+           </div>
+       </div>
+       <!-- CARD-3 -->
+       <div class="w-80 h-55 bg-white rounded-xl shadow-lg">
+           <div class="h-30 w-60 text-center mx-auto mt-7 bg-[#a8ebff] rounded-lg shadow-md mb-4">
+              <h3 class="poppins text-2xl font-bold pt-2">Eager</h3>
+              <p class="poppins text-lg font-medium">Meaning /Pronounciation</p>
+              <p class="hind text-2xl font-semibold text-[#62748e]">"আগ্রহী / ইগার</p>
+           </div>
+           <div class="flex justify-between mx-4">
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+             <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+            <i class="fa-solid fa-volume-high"></i>
+            </button>
+           </div>
+       </div>
+       <!-- CARD-4 -->
+       <div class="w-80 h-55 bg-white rounded-xl shadow-lg">
+           <div class="h-30 w-60 text-center mx-auto mt-7 bg-[#a8ebff] rounded-lg shadow-md mb-4">
+              <h3 class="poppins text-2xl font-bold pt-2">Eager</h3>
+              <p class="poppins text-lg font-medium">Meaning /Pronounciation</p>
+              <p class="hind text-2xl font-semibold text-[#62748e]">"আগ্রহী / ইগার</p>
+           </div>
+           <div class="flex justify-between mx-4">
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+             <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+            <i class="fa-solid fa-volume-high"></i>
+            </button>
+           </div>
+       </div>
+       <!-- CARD-5 -->
+       <div class="w-80 h-55 bg-white rounded-xl shadow-lg">
+           <div class="h-30 w-60 text-center mx-auto mt-7 bg-[#a8ebff] rounded-lg shadow-md mb-4">
+              <h3 class="poppins text-2xl font-bold pt-2">Eager</h3>
+              <p class="poppins text-lg font-medium">Meaning /Pronounciation</p>
+              <p class="hind text-2xl font-semibold text-[#62748e]">"আগ্রহী / ইগার</p>
+           </div>
+           <div class="flex justify-between mx-4">
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+             <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+            <i class="fa-solid fa-volume-high"></i>
+            </button>
+           </div>
+       </div>
+       <!-- CARD-6 -->
+       <div class="w-80 h-55 bg-white rounded-xl shadow-lg">
+           <div class="h-30 w-60 text-center mx-auto mt-7 bg-[#a8ebff] rounded-lg shadow-md mb-4">
+              <h3 class="poppins text-2xl font-bold pt-2">Eager</h3>
+              <p class="poppins text-lg font-medium">Meaning /Pronounciation</p>
+              <p class="hind text-2xl font-semibold text-[#62748e]">"আগ্রহী / ইগার</p>
+           </div>
+           <div class="flex justify-between mx-4">
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+             <i class="fa-solid fa-circle-info"></i>
+            </button>
+            <button class="text-[#374957] bg-[#1a91ff1a] p-3 rounded-xl transition-all duration-200 ease-in-out
+          hover:bg-[#1a91ff33] hover:text-[#1a91ff] hover:shadow-md
+           active:scale-95 active:bg-[#1a91ff4d]">
+            <i class="fa-solid fa-volume-high"></i>
+            </button>
+           </div>
+       </div>
+
+    </section>
+
+
+    <!-- Lesson Not Exists -->
+    <section class="max-w-[calc(100%-80px)] mx-auto flex flex-col justify-center items-center h-64 bg-[#badeff80] mb-4">
+        <img src="./assets/alert.png" alt="" class="w-24">
+        <div class="text-center">
+           <p class="hind text-base font-normal text-[#292626]">এই <span class="poppins">Lesson</span> এ এখনো কোন <span class="poppins">Vocabulary</span>যুক্ত করা হয়নি।
+            </p>
+            <h2 class="poppins text-3xl font-medium mt-2">
+            <span class="hind">নেক্সট</span> Lesson <span class="hind">এ যান</span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="max-w-[calc(100%-80px)] mx-auto h-full mt-5">
+        <h2 class="poppins w-full text-4xl font-semibold mb-8 text-center"><span class="text-sky-500">Frequently</span> Asked Questions</h2>
+        <!-- Question - 1 -->
+        <div class="w-full bg-[#badeff80] rounded-md py-4">
+            <p class="poppins font-medium px-2">1. How can I start learning English on this website?</p>
+            <p class="poppins text-[#62748e] px-2">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</p>
+        </div>
+        <!-- Question - 2 -->
+        <div class="w-full bg-[#badeff80] my-4 py-4 rounded-md">
+            <p class="poppins font-medium px-2">2. Is this website free to use?</p>
+            <p class="poppins text-[#62748e] px-2">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</p>
+        </div>
+        <!-- Question - 3 -->
+        <div class="w-full bg-[#badeff80] my-4 rounded-md py-4">
+            <p class="poppins font-medium px-2">3. Do I need to create an account?</p>
+            <p class="poppins text-[#62748e] px-2">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</p>
+        </div>
+        <!-- Question - 4 -->
+        <div class="w-full bg-[#badeff80] my-4 rounded-md py-4">
+            <p class="poppins font-medium px-2">4. How can I build my English vocabulary?</p>
+            <p class="poppins text-[#62748e] px-2">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</p>
+        </div>
+        <!-- Question - 5 -->
+        <div class="w-full bg-[#badeff80] my-4 rounded-md py-4">
+            <p class="poppins font-medium px-2">5. Do you offer certificates for completed courses?</p>
+            <p class="poppins text-[#62748e] px-2">You can start by exploring our beginner lessons, interactive exercises, and quizzes. We also offer structured courses to guide you step by step.</p>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    </footer>
+    <footer class="border-t-3 border-[#ffebeb] h-40 mt-6 bg-[#badeff80]"> 
+        <div class="max-w-[calc(100%-80px)] mx-auto flex justify-between h-25 mt-10"> 
+            <div> 
+                <h2 class="poppins flex text-xl font-semibold items-center">English<img src="./assets/logo.png" alt="" class="w-10 h-10"> <span class="hind text-xl font-semibold">জানালা</span></h2> 
+                <p class="hind text-lg font-semibold">ইংরেজি শিখুন সহজে</p> 
+                <p class="poppins text-base font-normal max-sm:text-xs">Providing DA-Tech Applications since 2025</p>
+            </div> 
+                
+            <div class="w-40 h-16 flex flex-col items-center mt-9"> 
+                <p class="poppins text-base font-normal text-center">Follow Us </p> 
+                <div class="flex gap-2"> 
+                    <img src="./assets/fb-thumb.png" alt=""> <img src="./assets/youtube-thumb.png" alt=""> 
+                    <img src="./assets/instagram-thumb.png" alt=""> 
+                </div> 
+            </div> 
+        </div> 
+    </footer>
+
+    <!-- LINK JAVASCRIPT -->
+    <script src="./main.js"></script>
+
+</body>
+</html>
